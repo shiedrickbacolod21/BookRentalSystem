@@ -1,38 +1,76 @@
 package library;
 
 public class Book {
+    /**
+     * initializing title.
+     */
     private String title;
+    /**
+     * initializing author.
+     */
     private String author;
+    /**
+     * initializing yearPublished.
+     */
     private int yearPublished;
+    /**
+     * initializing isRented.
+     */
     private boolean isRented;
 
+    /**
+     *
+     * @param tTitle
+     * @param aAuthor
+     * @param yYearPublished
+     */
     // Constructor initialize
-    public Book(String title, String author, int yearPublished) {
-        this.title = title;
-        this.author = author;
-        this.yearPublished = yearPublished;
+    public Book(final String tTitle,
+            final String aAuthor,
+            final int yYearPublished) {
+        this.title = tTitle;
+        this.author = aAuthor;
+        this.yearPublished = yYearPublished;
         this.isRented = false;
     }
 
-    public String getTitle() {
+    /**
+     *
+     * @return title
+     */
+    public final String getTitle() {
         return title;
     }
 
-    public String getAuthor() {
+    /**
+     *
+     * @return author
+     */
+    public final String getAuthor() {
         return author;
     }
 
-    public int getYearPublished() {
+    /**
+     *
+     * @return yearPublished
+     */
+    public final int getYearPublished() {
         return yearPublished;
     }
 
-    public boolean isRented() {
+    /**
+     *
+     * @return isRented
+     */
+    public final boolean isRented() {
         return isRented;
     }
 
-    public void rent() {
+    /**
+     *
+     */
+    public final void rent() {
         this.isRented = true;
     }
-
 
 }
